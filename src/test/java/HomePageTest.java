@@ -63,7 +63,7 @@ public class HomePageTest {
         HomePage homePage = new HomePage(driver);
         homePage.waitForHomePageLoaded();
         homePage.clickOnCookieAcceptButton();
-        homePage.scrollPageTillAccordionList();
+        homePage.scrollPageToAccordionList();
         homePage.clickOnAccordionHeader(listItemNumber);
         homePage.waitForLoadItem(listItemNumber);
         if (homePage.isAccordionItemDisplayed(listItemNumber)){

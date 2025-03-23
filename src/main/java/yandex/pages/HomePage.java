@@ -67,7 +67,7 @@ public class HomePage {
         driver.findElement(orderButtonBody).click();
     }
 
-    public void scrollPageTillAccordionList() {
+    public void scrollPageToAccordionList() {
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",
             driver.findElement(accordionHeader));
     }
